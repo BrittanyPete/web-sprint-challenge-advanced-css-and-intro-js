@@ -208,16 +208,16 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-// console.log("Task1a:", artists[0].name);
+console.log("Task1a:", artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array
-// console.log("Task1b:", artists[2].bio);
+console.log("Task1b:", artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 artists[9].name = "Vincent Van Gogh";
-// console.log("Task2:", artists[9].name);
+console.log("Task2:", artists[9].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -234,7 +234,7 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 function getArtistByIndex(array, index) {
   return `the artist at index ${array[index].id} is ${array[index].name}`;
 }
-// console.log("Task3:", getArtistByIndex(artists, 18));
+console.log("Task3:", getArtistByIndex(artists, 18));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -261,7 +261,7 @@ function get20s(array) {
   } 
   return all20s;
 }
-console.log('Task 4:', get20s(artists))
+console.log('Task 4:', get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -286,7 +286,7 @@ function removeArtist(array, index) {
   }
   return array.length;
 }
-// console.log("Task 5:", removeArtist(artists, 5));
+console.log("Task 5:", removeArtist(artists, 5));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -304,23 +304,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-//7 params - array, id, name, years, genre, nationality, bio
-//add new obect to array using .push()
-//return array
 
 function addArtist(array) {
   const newArtist = {
     id: 20,
     name: 'Brittany',
     years: '1988 - 2021',
-    genre: 'Web Design',
     nationality: 'American',
-    bio: 'Learning how to do web development. JavaScript is kicking my butt!',
+    bio: 'Learning web development. JavaScript is kicking my butt.',
   }
-  return array.push(newArtist);
+  return array;
 }
-
-console.log('Task 6:', addArtist(artists));
+// console.log('Task 6:', addArtist(artists));
+console.log('Task 6:', artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -345,7 +341,7 @@ function lotsOfArt(array) {
  }
  return alotOfArt;
 }
-// console.log('Task 7:', lotsOfArt(artists));
+console.log('Task 7:', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
