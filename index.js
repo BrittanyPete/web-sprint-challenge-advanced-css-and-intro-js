@@ -315,8 +315,9 @@ function addArtist(array) {
   }
   return array;
 }
-// console.log('Task 6:', addArtist(artists));
+
 console.log('Task 6:', artists);
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
