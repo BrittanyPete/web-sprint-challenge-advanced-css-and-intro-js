@@ -208,16 +208,16 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log("Task1a:", artists[0].name);
+// console.log("Task1a:", artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array
-console.log("Task1b:", artists[2].bio);
+// console.log("Task1b:", artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 artists[9].name = "Vincent Van Gogh";
-console.log("Task2:", artists[9].name);
+// console.log("Task2:", artists[9].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -234,7 +234,7 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 function getArtistByIndex(array, index) {
   return `the artist at index ${array[index].id} is ${array[index].name}`;
 }
-console.log("Task3:", getArtistByIndex(artists, 18));
+// console.log("Task3:", getArtistByIndex(artists, 18));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -246,23 +246,23 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 //one param - array
-//create a new array
-//for loop - going through current array
-//math.floor
-//born AND && died between 1900-2000
-//return new array
-//console.log the new array
+//new array
+//for loop
+//.split() method on year
+//return new array - with names
 
 function get20s(array) {
-  const newArray = [];
+  const all20s = [];
   for (let i = 0; i < array.length; i++) {
-    if (Math.floor(array[i].years) === 1900 - 2000) {
-      newArray.push(array[i].name);
-    }
-  }
-  return newArray;
+    let yearSplit = (array[i].years).split(' ');
+      if (Number(yearSplit[0]) >= 1900 && Number(yearSplit[2] <= 2000)) {
+        all20s.push(array[i].name);  
+      }
+  } 
+  return all20s;
 }
-// console.log('Task 4:', artists);
+console.log('Task 4:', get20s(artists))
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -286,7 +286,7 @@ function removeArtist(array, index) {
   }
   return array.length;
 }
-console.log("Task 5:", removeArtist(artists, 5));
+// console.log("Task 5:", removeArtist(artists, 5));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -317,10 +317,10 @@ function addArtist(array) {
     nationality: 'American',
     bio: 'Learning how to do web development. JavaScript is kicking my butt!',
   }
-  return array.push(addArtist);
+  return array.push(newArtist);
 }
 
-// console.log('Task 6:', addArtist(artists));
+console.log('Task 6:', addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -345,7 +345,7 @@ function lotsOfArt(array) {
  }
  return alotOfArt;
 }
-console.log('Task 7:', lotsOfArt(artists));
+// console.log('Task 7:', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
