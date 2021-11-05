@@ -82,12 +82,12 @@ nav span{
 
 }
 /*Title Section Styles*/
-.title-container{
+#title {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
+#title div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
     background-position: center;	
     color: white;	
@@ -99,10 +99,10 @@ nav span{
     height:60vh;
     margin:5% 0;
 }	
-.title-container div:hover {	
+#title div:hover {	
     opacity: 80%;	
 }	
-.title-container hr{
+#title hr{
     width:85%;
 }
 button{
@@ -120,19 +120,23 @@ button:hover{
     box-shadow: 2px 2px 1px white;
 }
 /*Artists Section Styles */
-.artists-container{
+#artists {
     display:flex;
     justify-content: space-around;
     width:85%;
     margin:0 auto;
 }
-.artists-list{
+.#artists {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
     margin:0;
     line-height: 1.3;
+}
+.artists-list{
+    display:flex;
+    
 }
 
 .artist{
@@ -154,11 +158,11 @@ button:hover{
     }
  
     /*title styling*/
-    .title-container div{
+    #title div{
         width: 100%;
         height: 55vh;
     }
-    .title-container hr{
+    #title hr{
         width:100%;
     }
     h1{
@@ -167,8 +171,9 @@ button:hover{
     }
 
     /*artist section styling*/
-    .artists-container{
+    #artists {
         width:100%;
+        margin-bottom: 80px;
     }
     .artists-list{
         display: flex;
@@ -186,27 +191,5 @@ button:hover{
         height: 20vh;
     }
 
-
-
-
-    /* .artists-list{
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-    }
-    .artist{
-        flex-direction: column;
-        align-items: cemter;
-        width: 100%;
-        width: 60%;
-    } 
-    .artist img{
-        width: 55%;
-        height: 20vh;
-    }
-    p{
-        font-size: 1.2rem;
-        width: 60%;
-    } */
 
 }
