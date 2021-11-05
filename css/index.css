@@ -103,7 +103,7 @@ nav span{
     opacity: 80%;	
 }	
 .title-container hr{
-    width:80%;
+    width:85%;
 }
 button{
     padding:1% 3%;
@@ -123,14 +123,90 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
+    width:85%;
     margin:0 auto;
+}
+.artists-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin:0;
+    line-height: 1.3;
 }
 
 .artist{
-    width:40%;
+    width:50%;
     text-align:center;
+    font-size: 1.4rem;
 }
 .artist img{
-    width:100%;
+    width:65%;
+    height: 30vh;
+}
+
+
+@media(max-width: 500px) {
+    /*nav bar styling*/
+    a {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+ 
+    /*title styling*/
+    .title-container div{
+        width: 100%;
+        height: 55vh;
+    }
+    .title-container hr{
+        width:100%;
+    }
+    h1{
+        font-size:4.5rem;
+        margin:0;
+    }
+
+    /*artist section styling*/
+    .artists-container{
+        width:100%;
+    }
+    .artists-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        line-height: 1.3;
+    }
+    .artist{
+        width: 75%;
+        font-size: 1.2rem;
+    }
+    .artist img{
+        width: 60%;
+        height: 20vh;
+    }
+
+
+
+
+    /* .artists-list{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .artist{
+        flex-direction: column;
+        align-items: cemter;
+        width: 100%;
+        width: 60%;
+    } 
+    .artist img{
+        width: 55%;
+        height: 20vh;
+    }
+    p{
+        font-size: 1.2rem;
+        width: 60%;
+    } */
+
 }

@@ -38,7 +38,6 @@ Please answer the following questions below, you may edit the readme file to inc
                 console.log(object.key[i];)
             }
 
-
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
